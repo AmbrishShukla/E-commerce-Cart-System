@@ -5,6 +5,11 @@ class Product
 public:
     Product(string name, double price, bool availability_status)
     {
+        // to handle the case when the price entered in negative
+        if (price < 0)
+        {
+            throw invalid_argument("Price cannot be negative");
+        }
         this->name = name;
         this->price = price;
         this->availability_status = availability_status;

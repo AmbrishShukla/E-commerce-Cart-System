@@ -59,6 +59,7 @@ public:
             auto it = cartItems.find(product);
             if (it != cartItems.end())
             {
+                cout << product->GetName() << " is removed from the cart " << endl;
                 cartItems.erase(it); // Product found, remove it
             }
             else
@@ -86,6 +87,7 @@ public:
             auto it = cartItems.find(product);
             if (it != cartItems.end())
             {
+                cout << "The quantity of " << product->GetName() << " is updated to " << quantity << endl;
                 it->second = quantity; // Update the quantity for the product
             }
             else
@@ -119,13 +121,17 @@ public:
         cout << "Cart Items:" << endl;
         for (pair<Product *, int> item : this->cartItems)
         {
-            cout << "You Have " << item.second << " " << item.first->GetName() << " In Your Cart" << endl;
+            cout << "You Have " << item.second << " " << item.first->GetName() << " In Your Cart "
+                 << "each cost $" << item.first->GetPrice() << endl;
         }
-        cout << "Total Bill: $" << GetTotalPrice() << endl;
+        cout << "-------------------------------------------------------------------" << endl;
+        cout << "Total Bill                  --> $" << GetTotalPrice() << endl;
         if (total_price > 0)
         {
-            cout << "Total Bill discouted : $" << total_price << endl;
+            cout << "-------------------------------------------------------------------" << endl;
+            cout << "Total Bill after discount's --> $" << total_price << endl;
         }
+        cout << "-------------------------------------------------------------------" << endl;
         cout << endl;
     }
 };
