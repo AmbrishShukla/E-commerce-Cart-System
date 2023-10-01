@@ -112,7 +112,10 @@ int main()
     }
 
     delete percentage_discount_strategy;
+    delete percentage_discount_strategy2;
+
     delete buy_one_get_one_discount;
+    delete buy_one_get_one_discount2;
 
     return 0;
 }
