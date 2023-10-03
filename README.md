@@ -20,19 +20,19 @@ This is a terminal based e-commerce cart system with various functionalities suc
 1. Download or clone the repository
 2. Two options for simulation :
 
-   1. **User input based** : **run file -> main_user_input_based.cpp**
-      input is provided by user for the product he want and in what quantity he wants.
-      Does he want to update the quantity of the product ?
-      Does he want to remove any product from cart ?
-      After all this , if the bill >= 1000 and < 5000 --> 10% discount.
-      if the bill >= 5000 then buy one get one free discount.
+   1. <h3>**User input based** : run file -> main_user_input_based.cpp</h3>
+      1.input is provided by user for the product he want and in what quantity he wants.
+      2.Does he want to update the quantity of the product ?
+      3.Does he want to remove any product from cart ?
+      4.After all this , if the bill >= 1000 and < 5000 --> 10% discount.
+      5.if the bill >= 5000 then buy one get one free discount.
 
-   2. **On predefined Input** : **run file -> main_predefined_input_based**
-      here input is already provided in the code which can be modified for test.
-      adding item to cart
-      updating item from cart
-      removing item from cart
-      applying both discount stratergy 1. percentage discount 2. buy-one-get-one free discount
+   2. <h3>**On predefined Input** : **run file -> main_predefined_input_based**</h3>
+      1.here input is already provided in the code which can be modified for test.
+      2.adding item to cart
+      3.updating item from cart
+      4.removing item from cart
+      5.applying both discount stratergy 1. percentage discount 2. buy-one-get-one free discount
 
 # Edge cases handeled :
 
@@ -47,7 +47,7 @@ This is a terminal based e-commerce cart system with various functionalities suc
 
 # Screenshot's Of Simulation :
 
-**1. **On predefined Input** : **File -> main_predefined_input_based\*\* \*\*
+<h3>1. **On predefined Input** : **File -> main_predefined_input_based</h3>
 
 1.  product list :
     ![Alt text](<images/product list 1.png>)
