@@ -22,7 +22,7 @@ void displayItems(vector<Product *> products)
     cout << endl;
     for (auto item : products)
     {
-        cout << "| Name : " << item->GetName() << " | price : " << item->GetPrice() << " | available_status : " << item->IsAvailable() << " " << endl;
+        cout << "| Name : " << item->GetName() << " | price : $" << item->GetPrice() << " | available_status : " << item->IsAvailable() << " " << endl;
         cout << "-------------------------------------------------------------------";
         cout << endl;
     }
@@ -33,11 +33,11 @@ int main()
     // Create a list of products
     vector<Product *> products = {
         // using the product class for microwave - base class
-        new Product("Microwave", 900, true),
+        new Product("Laptop", 900, true),
 
         // products using derived classes
-        new Laptop("MacBook air", 1000, true, 13, 16, 512),
-        new Headphone("AirPods Pro", 200, true, "wireless", "Apple"),
+        new Laptop("MacBook air", 1234, true, 13, 16, 512),
+        new Headphone("AirPods Pro", 212, true, "wireless", "Apple"),
         new Keyboard("Mechanical Keyboard", 100, true, "mechanical", "Razer"),
         new Mouse("Gaming Mouse", 50, true, "wired", "Logitech"),
         new Monitor("27-inch 4K Monitor", 300, true, 27, "4K"),
@@ -90,21 +90,6 @@ int main()
     // Print the cart contents with the BuyOneGetOneFree discount applied
     cart.Print();
 
-    // Change the discount strategy to percentage + BuyOneGetOneFreeDiscountStrategy
-    cout << "--> Applying buy-one-get-one + percentage discount stratergy : " << endl;
-    DiscountStrategy *buy_one_get_one_discount2 = new BuyOneGetOneFreeDiscountStrategy;
-    // Calculate the discounted price with the BuyOneGetOneFree discount
-    double discounted_price2 = cart.GetTotalPrice() - buy_one_get_one_discount2->GetDiscountAmount(&cart);
-    // Assign the discounted price to the cart
-    cart.SetTotalPrice(discounted_price2);
-    DiscountStrategy *percentage_discount_strategy2 = new PercentageDiscountStrategy(10);
-    // Calculate the discounted price
-    discounted_price2 -= percentage_discount_strategy2->GetDiscountAmount(&cart);
-    cout << "DC " << discounted_price2 << endl;
-    // Assign the discounted price to the cart
-    cart.SetTotalPrice(discounted_price2);
-    cart.Print();
-
     // Delete the products and discount strategy objects
     for (Product *product : products)
     {
@@ -112,10 +97,7 @@ int main()
     }
 
     delete percentage_discount_strategy;
-    delete percentage_discount_strategy2;
-
     delete buy_one_get_one_discount;
-    delete buy_one_get_one_discount2;
 
     return 0;
 }
