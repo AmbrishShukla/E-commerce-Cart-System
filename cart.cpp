@@ -8,7 +8,7 @@ public:
 public:
     Cart() {}
 
-    // my create function with single parameter
+    // add item
     void AddItem(Product *product)
     {
         if (this->cartItems.find(product) != this->cartItems.end())
@@ -21,6 +21,7 @@ public:
         }
     }
 
+    //  add item to cart with specified quantity
     void AddItem(Product *product, int quantity)
     {
         // using try catch block to handle the edge cases when the quantity is less than 0
@@ -75,13 +76,12 @@ public:
 
     void UpdateQuantity(Product *product, int quantity)
     {
-        // this->cartItems[product] = quantity;
         // edge case : when quantity < 0  || product not in cart
         try
         {
-            if (quantity < 0)
+            if (quantity <= 0)
             {
-                throw std::invalid_argument("Quantity cannot be negative.");
+                throw std::invalid_argument("Quantity cannot be negative or zero.");
             }
 
             auto it = cartItems.find(product);

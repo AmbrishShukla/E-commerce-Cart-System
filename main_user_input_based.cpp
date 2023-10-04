@@ -16,6 +16,7 @@ using namespace std;
 #include "mouse.cpp"
 #include "monitor.cpp"
 
+// function to display the item which are there in the product list
 void displayItems(vector<Product *> products)
 {
     cout << "|-------------------: The list of product are :-------------------|" << endl;
@@ -27,6 +28,8 @@ void displayItems(vector<Product *> products)
         cout << endl;
     }
 }
+
+// driver code
 int main()
 {
     // Create a list of products
@@ -44,6 +47,7 @@ int main()
 
     displayItems(products);
     cout << endl;
+
     // Create a cart object
     Cart cart;
 

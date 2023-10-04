@@ -32,7 +32,7 @@ int main()
 {
     // Create a list of products
     vector<Product *> products = {
-        // using the product class for microwave - base class
+        // using the product class for laptop - base class
         new Product("Laptop", 900, true),
 
         // products using derived classes
@@ -101,6 +101,8 @@ int main()
 
     return 0;
 }
+
+// creating product using the product class for test purpose
 
 // Create a list of products
 // vector<Product *> products = {
