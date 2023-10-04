@@ -17,22 +17,24 @@ This is a terminal based e-commerce cart system with various functionalities suc
 
 # Steps to run the code :
 
-1. Download or clone the repository
+1. Download the zip file or clone the repository
 2. Two options for simulation :
 
-   1. **User input based** : **run file -> main_user_input_based.cpp**
-      input is provided by user for the product he want and in what quantity he wants.
-      Does he want to update the quantity of the product ?
-      Does he want to remove any product from cart ?
-      After all this , if the bill >= 1000 and < 5000 --> 10% discount.
-      if the bill >= 5000 then buy one get one free discount.
-
-   2. **On predefined Input** : **run file -> main_predefined_input_based**
-      here input is already provided in the code which can be modified for test.
-      adding item to cart
-      updating item from cart
-      removing item from cart
-      applying both discount stratergy 1. percentage discount 2. buy-one-get-one free discount
+   1. <h3>**On predefined Input** : **run file -> main_predefined_input_based**</h3>
+   
+      <li>here input is already provided in the code which can be modified for test.</li>
+      <li>adding item to cart</li>
+      <li>updating item from cart</li>
+      <li>removing item from cart</li>
+      <li>applying both discount stratergy 1. percentage discount 2. buy-one-get-one free discount</li>
+     
+   2. <h3>**User input based** : run file -> main_user_input_based.cpp</h3>
+   
+      <li> input is provided by user for the product he want and in what quantity he wants.</li>
+      <li> Does he want to update the quantity of the product ?</li>
+      <li> Does he want to remove any product from cart ?</li>
+      <li> After all this , if the bill >= 1000 and < 5000 --> 10% discount.</li>
+      <li> if the bill >= 5000 then buy one get one free discount.</li>
 
 # Edge cases handeled :
 
@@ -47,39 +49,39 @@ This is a terminal based e-commerce cart system with various functionalities suc
 
 # Screenshot's Of Simulation :
 
-**1. **On predefined Input** : **File -> main_predefined_input_based\*\* \*\*
+<h3>1. **On predefined Input** : **File -> main_predefined_input_based</h3>
 
 1.  product list :
     ![Alt text](<images/product list 1.png>)
 
-2.  cart view
+2.  cart view :
     ![Alt text](<images/total 1.png>)
 
-3.  updating
+3.  updating :
     ![Alt text](images/updating.png)
 
-4.  removing
+4.  removing :
     ![Alt text](images/removing.png)
 
-5.  cart after aoolying discounts
+5.  cart after aoolying discounts :
     ![Alt text](images/discounts.png)
 
 **2. **User input based** : **File -> main_user_input_based.cpp\*\*\*\*
 
-1.  product list view
+1.  product list view :
     ![Alt text](<images 2/product list 1.png>)
 
-2.  user input cart items
+2.  user input cart items :
     ![Alt text](<images 2/user input cart.png>)
 
-3.  user removing a product from cart
+3.  user removing a product from cart :
     ![Alt text](<images 2/removing.png>)
 
-4.  user updating the quantity of an item from cart
+4.  user updating the quantity of an item from cart :
     ![Alt text](<images 2/updating .png>)
 
-5.  discount for user based on how high the bill amount is
+5.  discount for user based on how high the bill amount is :
     ![Alt text](<images 2/discount.png>)
 
-6.  final cart view with final bill with applied discount
+6.  final cart view with final bill with applied discount :
     ![Alt text](<images 2/final bill and cart view.png>)
