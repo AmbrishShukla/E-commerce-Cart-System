@@ -2,10 +2,6 @@
 class Cart
 {
 public:
-    map<Product *, int> cartItems;
-    double total_price = 0; // Add a total_price member variable
-
-public:
     Cart() {}
 
     // add item
@@ -134,4 +130,8 @@ public:
         cout << "-------------------------------------------------------------------" << endl;
         cout << endl;
     }
+
+public:
+    map<Product *, int> cartItems;
+    double total_price = 0; // Add a total_price member variable
 };

@@ -1,5 +1,7 @@
 # E-commerce-Cart-System - (Documentation)
 
+Name : Ambrish shukla
+
 # Problem Statement
 
 Develop a simple E-commerce cart system where users can add products to their cart, update quantities, and view the total bill. Products
@@ -20,16 +22,16 @@ This is a terminal based e-commerce cart system with various functionalities suc
 1. Download the zip file or clone the repository
 2. Two options for simulation :
 
-   1. <h3>**On predefined Input** : **run file -> main_predefined_input_based**</h3>
-   
-      <li>here input is already provided in the code which can be modified for test.</li>
+   1. <h3>**On predefined Input** : Run File -> main_predefined_input_based</h3>
+
+      <li>here input is already provided in the code which can be modified for testing in the driver code.</li>
       <li>adding item to cart</li>
       <li>updating item from cart</li>
       <li>removing item from cart</li>
       <li>applying both discount stratergy 1. percentage discount 2. buy-one-get-one free discount</li>
-     
-   2. <h3>**User input based** : run file -> main_user_input_based.cpp</h3>
-   
+
+   2. <h3>User input based : Run File -> main_user_input_based.cpp</h3>
+
       <li> input is provided by user for the product he want and in what quantity he wants.</li>
       <li> Does he want to update the quantity of the product ?</li>
       <li> Does he want to remove any product from cart ?</li>
@@ -72,13 +74,13 @@ This is a terminal based e-commerce cart system with various functionalities suc
     ![Alt text](<images 2/product list 1.png>)
 
 2.  user input cart items :
-    ![Alt text](<images 2/user input cart.png>)
+    ![Alt text](<images 2/user input items.png>)
 
 3.  user removing a product from cart :
-    ![Alt text](<images 2/removing.png>)
+    ![Alt text](<images 2/remove.png>)
 
 4.  user updating the quantity of an item from cart :
-    ![Alt text](<images 2/updating .png>)
+    ![Alt text](<images 2/update.png>)
 
 5.  discount for user based on how high the bill amount is :
     ![Alt text](<images 2/discount.png>)

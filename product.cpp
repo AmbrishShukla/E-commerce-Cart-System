@@ -1,4 +1,3 @@
-
 // Product Class
 class Product
 {
